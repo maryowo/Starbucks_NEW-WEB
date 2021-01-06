@@ -59,7 +59,19 @@ nav{
 
 #products .text p {width: 300px;
                    line-height: 2;
+                   padding: 10px 0;
 }
 
-#products > div:nth-child(2) {background-color: #999;
+#products > div:nth-child(2){
+   grid-template-areas: "pic text";
+   grid-template-columns: 60% 40%;
+}
+#products > div:nth-child(2) .text{
+    /* 格線區域:此區域名稱 */
+    grid-area: text;
+}
+
+#products > div:nth-child(2) .pic{
+    /* 格線區域:此區域名稱 */
+    grid-area: pic;
 }
