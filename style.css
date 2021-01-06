@@ -23,4 +23,43 @@ nav{
 #link a {padding: 0 35px;
         /* td 文字裝飾 none 無 */
         text-decoration: none;
+        font-weight: 900;
+        color: #999;
+        transition: 0.5s;
+}
+
+#link a:hover{color: #226641;
+              border: 5px #226641;
+}
+
+/* 商品類型 */
+/* 元素1 > 元素2 */
+/* 元素1 裡面 第一層 的 元素2 */
+#products{width: 1280px;
+          margin: 0 auto;
+}
+
+#products > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#products .pic img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#products .text {
+    padding: 150px 20px 0 0 ;
+}
+
+#products .text h1 {padding: 30px 0;
+}
+
+#products .text p {width: 300px;
+                   line-height: 2;
+}
+
+#products > div:nth-child(2) {background-color: #999;
 }
