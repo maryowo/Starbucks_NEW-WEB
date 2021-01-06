@@ -35,13 +35,13 @@ nav{
 /* 商品類型 */
 /* 元素1 > 元素2 */
 /* 元素1 裡面 第一層 的 元素2 */
-#products{width: 1280px;
-          margin: 0 auto;
+#products {width: 1280px;
+          margin: 0 auto ;
 }
 
 #products > div {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 60%;
 }
 
 #products .pic img {
@@ -54,7 +54,7 @@ nav{
     padding: 150px 20px 0 0 ;
 }
 
-#products .text h1 {padding: 30px 0;
+#products .text h1 {padding: 10px 0;
 }
 
 #products .text p {width: 300px;
@@ -74,4 +74,46 @@ nav{
 #products > div:nth-child(2) .pic{
     /* 格線區域:此區域名稱 */
     grid-area: pic;
+}
+
+/* 按鈕樣式 */
+.button {
+    padding: 8px 30px;
+    /* 邊框 粗細 樣式 顏色 */
+    border: 1px solid #226641;
+    text-decoration: none;
+    color: #226641;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: #226641;
+    color: #ffffff;
+}
+
+/* 門市資訊 */
+#info {
+    display: grid;
+    /* repeat (數量,寬度) */
+    /* fr 格子 */
+    /* 格子/數量 */
+    /* 1fr/3 */
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    width: 1280px;
+    margin: 20px auto 0;
+}
+
+#info .pic img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#info .text h1 {
+    padding: 30px 0; 
+}
+
+#info .text p {
+    padding: 20px 0 ;
 }
