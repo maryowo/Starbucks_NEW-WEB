@@ -32,6 +32,65 @@ nav{
               border: 5px #226641;
 }
 
+/* 最新商品 */
+/* 元素1 元素2 - 在元素1 內 所有的元素2 */
+#banner div{
+    /* 高度:100vh 螢幕高度 */
+    height: 100vh;
+}
+
+.banner1 {
+    background-image: url(./IMG/banner_drinks_201228.png);
+    background-size: cover;
+}
+
+.banner2 {
+    background-image: url(./IMG/banner_entertain_201228.png);
+    background-size: cover;
+}
+
+.banner3 {
+    background-image: url(./IMG/banner_food_201228.png);
+    background-size: cover;
+}
+
+#banner{
+    text-align: center;
+    color: #fff;
+}
+
+#banner h1{
+    padding: 30px;
+    margin-top: 200px;
+    font-size: 120px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#banner hr{
+    width: 80%;
+    margin: 0 auto;
+    height: 5px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#banner .slick-prev{
+    left: 50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+#banner .slick-next{
+    right: 50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+#banner .slick-dots{
+    bottom: 25px;
+}
+
 /* 商品類型 */
 /* 元素1 > 元素2 */
 /* 元素1 裡面 第一層 的 元素2 */
